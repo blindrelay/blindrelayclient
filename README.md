@@ -1,8 +1,8 @@
 # Welcome to blindrelay!
 
-#blindrelay CryptoBuffer file format
+# blindrelay CryptoBuffer file format
 
-##CryptoBuffer Bytes
+## CryptoBuffer Bytes
 
 Field | Length (bytes)
 ------------ | ------------
