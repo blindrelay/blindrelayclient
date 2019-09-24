@@ -16,7 +16,7 @@ End-to-end encryption groups are created simply by inviting other users to a gro
 
 Group formation occurs as follows in the blindrelay Windows 10 app (either by using the GUI or watched folders):
 1. General group settings are set and member invitee email addresses are specified.
-2. The group AES 256 encryption key is randomly generated (using CSRNG) and group member invitees get invited by a SignlaR and/or an email (optional) invitation.
+2. The group AES 256 encryption key is randomly generated (using CSRNG) and group member invitees get invited by a SignalR and/or an email (optional) invitation.
 3. Upon acceptance, group members receive the AES key via the member's RSA 4096 public key.
 
 After a group is created, files can be published to the group. The steps in group file publishing are:
