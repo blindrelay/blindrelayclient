@@ -2,19 +2,20 @@
 
 # blindrelay CryptoBuffer file format
 
-## CryptoBuffer Bytes
+## Bytes
 
 Field | Length (bytes)
 ------------ | ------------
 Length | 4
 Data Bytes | Variable Length in bytes
 
-## CryptoBuffer String
+## String
 Field | Length (bytes)
 ------------ | ------------
 Length | 4
 UTF-8 Characters | Variable Length in bytes
 
+## CryptoBuffer File
 Field | Type | Length (bytes or characters) | Contents or Purpose
 ------------ | ------------ | ------------ | ------------
 PayloadLength | DWORD | 8 | Total length of file
