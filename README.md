@@ -7,7 +7,13 @@ Used in conjuction with the Windows 10 blindrelay app (coming soon in the Micros
 
 Visit https://blindrelay.com for more information.
 
-## blindrelay CryptoBuffer file format
+## blindrelay Architecture Overview
+Blindrelay uses several Azure services (including Functions, Blobs, Queues, and SignalR) and a Windows 10 Universal App to orchestrate end-to-end encryption groups. With an optional API Key, developers can develop backend .NET Core (or other language) code to integrate downloading and decryption in backend systems.
+
+![Image of blindrelay group sharing](https://blindrelay.com/media/blindrelay-multiple-subscribers-multiple-publishersubscribers.png)
+
+
+## blindrelay CryptoBuffer File Format
 Below is the specification for encrypted blindrelay files.
 The example source code and library handle parsing, but this is provided for reference to support additional languages.
 
