@@ -14,7 +14,7 @@ Blindrelay uses several Azure services (including over 70 Azure Functions, Cosmo
 
 End-to-end encryption groups are created simply by inviting other users to a group via email addresses. Group members can be invited as publishers, subscribers, or both. 
 
-Group formation occurs as follows in the blindrelay Windows 10 app (either by using the GUI or watched folders):
+Group formation occurs as follows in the blindrelay Windows 10 app:
 1. General group settings are set and member invitee email addresses are specified.
 2. The group AES 256 encryption key is randomly generated (using CSRNG) and group member invitees get invited by a SignalR and/or an email (optional) invitation.
 3. Upon acceptance, group members receive the AES key via the member's RSA 4096 public key.
@@ -22,7 +22,7 @@ Group formation occurs as follows in the blindrelay Windows 10 app (either by us
 After a group is created, files can be published to the group. Generally, 5 gig and smaller files have been tested, but there isn't any reason much larger files won't work.
 
 The steps in group file publishing are:
-1. Select one or more files to publish.
+1. In the app, manually select one or more files to publish (or use group watched folders to automatically publish)
 2. File gets AES 256 encrypted and HMACSHA256 signed (on publisher's device) with the group AES key in the CryptoBuffer format (see below).
 3. Encrypted file payload gets placed in an Azure blob and group subscriber records are recorded in Cosmos DB.
 4. Group subscribers are notified via SignalR that there are files to download.
