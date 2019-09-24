@@ -19,7 +19,9 @@ Group formation occurs as follows in the blindrelay Windows 10 app (either by us
 2. The group AES 256 encryption key is randomly generated (using CSRNG) and group member invitees get invited by a SignalR and/or an email (optional) invitation.
 3. Upon acceptance, group members receive the AES key via the member's RSA 4096 public key.
 
-After a group is created, files can be published to the group. The steps in group file publishing are:
+After a group is created, files can be published to the group. Generally, 5 gig and smaller files have been tested, but there isn't any reason much larger files won't work.
+
+The steps in group file publishing are:
 1. Select one or more files to publish.
 2. File gets AES 256 encrypted and HMACSHA256 signed (on publisher's device) with the group AES key in the CryptoBuffer format (see below).
 3. Encrypted file payload gets placed in an Azure blob and group subscriber records are recorded in Cosmos DB.
@@ -28,7 +30,7 @@ After a group is created, files can be published to the group. The steps in grou
 The steps in group file download by subscribers are:
 1. Using the blindrelay app or custom backend code (via an API Key), files ready to download are streamed to subscriber devices, still encrypted.
 2. If using the app, the user has control when the downloaded files get decrypted. Additionally, if the API is used, the custom code can download and decrypt the file(s) after getting notified via SignalR.
-3. File decryption, using the group AES key, happens after the file has been downloaded.
+3. File decryption, using the group AES key, happens on the subscriber's device after the file has been downloaded.
 
 For more detailed information, visit https://blindrelay.com/HowBlindrelayWorks
 
