@@ -23,7 +23,7 @@ Field | Type | Length (bytes or characters) | Contents or Purpose
 PayloadLength | DWORD | 8 | Total length of file
 Magic | Bytes | 4 chars | B,R,P,K
 Signature | Bytes | 32 | HMACSHA256 signature of file contents
-EncryptionAlgorithm | String | Variable | "AES-256-CBC-PKCS7"
+EncryptionAlgorithm | String | Variable | AES-256-CBC-PKCS7
 CreatedBy | Bytes | Variable | ID of creator
 Id | String | Variable | General identifier
 KeyId | String | Variable | blindrelay ID of encryption key
