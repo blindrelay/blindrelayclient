@@ -26,7 +26,7 @@ CreatedBy | Bytes | Variable | ID of creator
 Id | String | Variable | General identifier
 KeyId | String | Variable | blindrelay ID of encryption key
 Purpose | String | Variable | Generally the Group ID. Only keys of Purpose can decrypt file
-MimeType | String | Variable | Mime-type of plaintext
+MimeType | String | Variable | Mime-type of plaintext (not encrypted)
 Created | DWORD | 8 | Unix time in milliseconds
 Iv | Bytes | Variable | Initialization vector pertaining to EncryptionAlgorithm
 CipherMetadata | Bytes | Variable | Encrypted metadata associated with ciphertext
