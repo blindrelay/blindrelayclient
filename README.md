@@ -9,7 +9,7 @@ Visit https://blindrelay.com for more information.
 
 ## blindrelay CryptoBuffer file format
 Below is the specification for encrypted blindrelay files.
-The example source code and library handles parsing, but this is provided for reference to support additional languages.
+The example source code and library handle parsing, but this is provided for reference to support additional languages.
 
 ### Bytes
 
