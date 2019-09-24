@@ -1,23 +1,29 @@
 # Welcome to blindrelay!
+Download and decryption API source code, example, and specification.
+.NET Core source code and example coming soon. 
 
-# blindrelay CryptoBuffer file format
+Used in conjuction with the Windows 10 blindrelay app (coming soon in the Microsoft App Store) to enable integration and automation with internal backend systems. 
+
+Visit https://blindrelay.com for more information.
+
+## blindrelay CryptoBuffer file format
 Below is the specification for encrypted blindrelay files.
 The example source code and library handles parsing, but this is provided for reference to support additional languages.
 
-## Bytes
+### Bytes
 
 Field | Length (bytes)
 ------------ | ------------
 Length | 4
 Data Bytes | Variable Length in bytes
 
-## String
+### String
 Field | Length (bytes)
 ------------ | ------------
 Length | 4
 UTF-8 Characters | Variable Length in bytes
 
-## CryptoBuffer File
+### CryptoBuffer File
 Field | Type | Length (bytes or characters) | Contents or Purpose
 ------------ | ------------ | ------------ | ------------
 PayloadLength | DWORD | 8 | Total length of file
