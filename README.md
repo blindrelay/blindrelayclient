@@ -21,7 +21,7 @@ UTF-8 Characters | Variable Length in bytes
 Field | Type | Length (bytes or characters) | Contents or Purpose
 ------------ | ------------ | ------------ | ------------
 PayloadLength | DWORD | 8 | Total length of file
-Magic | String | 4 chars | B,R,P,K
+Magic | Bytes | 4 chars | B,R,P,K
 Signature | Bytes | 32 | HMACSHA256 signature of file contents
 EncryptionAlgorithm | String | Variable | "AES-256-CBC-PKCS7"
 CreatedBy | Bytes | Variable | ID of creator
