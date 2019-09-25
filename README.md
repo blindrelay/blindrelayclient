@@ -1,9 +1,14 @@
 # Welcome to blindrelay!
 Download and decryption API source code, example, and specification.
 
-.NET Core source code and example coming soon. 
+.NET Core source code and example is up!
 
-Used in conjuction with the Windows 10 blindrelay app (coming soon in the Microsoft App Store) to enable integration and automation with internal backend systems. 
+Get the code and build the BlindrelayPublic.sln using Visual Studio 2019. 
+
+**Blindrelay.Core** - blindrelay .NET Core download and decrypt API
+**Blindrelay.Core.Example** - example console app that illustrates logging in, receiving SignalR notifications, downloading files, and decrypting files.
+
+This library is used in conjuction with the Windows 10 blindrelay app (coming soon in the Microsoft App Store) to enable integration and automation with internal backend systems. 
 
 Visit https://blindrelay.com for more information.
 
