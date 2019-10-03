@@ -9,12 +9,12 @@ Get the code and build the BlindrelayPublic.sln using Visual Studio 2019.
 
 **Blindrelay.Core.Example** - example console app that illustrates logging in, receiving SignalR notifications, downloading files, and decrypting files.
 
-This library is used in conjuction with the Windows 10 blindrelay app (coming soon in the Microsoft App Store) to enable integration and automation with internal backend systems. 
+This library is used in conjuction with the Windows 10 blindrelay app (available in the Microsoft App Store) to enable integration and automation with internal backend systems. 
 
 Visit https://blindrelay.com for more information.
 
 ## blindrelay Architecture Overview
-Blindrelay uses several Azure services (including over 70 Azure Functions, Cosmos DB, Blobs, Queues, and SignalR) and a Windows 10 Universal App to orchestrate end-to-end encryption groups. With an optional API Key, developers can develop backend .NET Core (or other language) code to integrate downloading and decryption in automated backend systems.
+Blindrelay uses several Azure services (including over 70 Azure Functions, Cosmos DB, Blobs, Queues, and SignalR) and a Windows 10 Universal App to orchestrate end-to-end encryption groups. With an optional API Key purchased from within the blindrelay app, developers can develop backend .NET Core (or other language) code to integrate downloading and decryption in automated backend systems.
 
 ![Image of blindrelay group sharing](https://blindrelay.com/media/blindrelay-multiple-subscribers-multiple-publishersubscribers.png)
 
